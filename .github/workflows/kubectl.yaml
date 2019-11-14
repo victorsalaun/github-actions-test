@@ -3,9 +3,9 @@
 name: Kubectl
 on: [push, pull_request]
 jobs:
-  lint:
+  kubectl:
     name: version
-    runs-on: ubuntu-latest
+    runs-on: macos
     steps:
       - uses: actions/checkout@v1.0.0
       - uses: victorsalaun/gh-actions/kubectl@master
