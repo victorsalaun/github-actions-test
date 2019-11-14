@@ -1,3 +1,5 @@
+---
+
 name: Kube tools
 on: [push, pull_request]
 jobs:
