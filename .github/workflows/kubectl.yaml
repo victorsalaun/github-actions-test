@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1.0.0
-      - uses: victorsalaun/gh-actions/kubectl@master
+      - uses: victorsalaun/gh-actions-kubectl@master
