@@ -1,0 +1,14 @@
+name: Kube tools
+on: [push, pull_request]
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1.0.0
+    - uses: victorsalaun/gh-actions@master
+      with:
+        command: |
+          kubectl version --client
+          helm version --client
+          yamllint --version
