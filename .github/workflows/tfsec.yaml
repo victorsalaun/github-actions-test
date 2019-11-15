@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1.0.0
-      - uses: docker://victorsalaun/gh-actions-tfsec
+      - uses: victorsalaun/gh-actions/tfsec@tfsec
         with:
           args: .
+
+#      - uses: docker://victorsalaun/gh-actions-tfsec
+#        with:
+#          args: .
