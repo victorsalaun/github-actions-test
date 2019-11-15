@@ -2,4 +2,4 @@
 
 test:
   - hello
-  - hello
+- hello
