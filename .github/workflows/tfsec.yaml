@@ -1,11 +1,11 @@
 ---
 
-name: Kubectl
+name: TFSec
 on: [push, pull_request]
 jobs:
   kubectl:
-    name: version
-    runs-on: self-hosted
+    name: sec
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1.0.0
       - uses: victorsalaun/gh-actions/tfsec@master
